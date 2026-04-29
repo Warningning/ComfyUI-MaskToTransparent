@@ -1,7 +1,14 @@
-## MaskToTransparent
-ComfyUI Mask Matting Convenience Tool 
-- ✅ Automatic transparency of black mask areas, with white areas retaining the original image completely 
-- ✅ Customizable Gaussian feathering of edges, eliminating harsh jagged edges 
-- ✅ Supports dual modes of retaining/overwriting the original image's alpha channel 
-- ✅ Compatible with RGB/RGBA images 
-- ✅ Often used in conjunction with SAM3.1 model nodes for semantic segmentation of images, extracting only the segmented target objects and removing other pixel content in the image that is unrelated to the target objects.
+# ComfyUI-MaskToTransparent
+
+A simple mask-based transparency tool for ComfyUI. Turns black mask areas into fully transparent pixels while preserving white areas, with edge feathering support. Perfect for object extraction after semantic segmentation with SAM 3.1 models.
+
+✨ Features
+✅ Automatically makes black mask areas transparent, preserves original image in white areas
+✅ Customizable Gaussian edge feathering to remove jagged edges
+✅ Supports preserving or overwriting original alpha channel
+✅ Fully compatible with RGB & RGBA images
+✅ Ideal for extracting segmented objects after using SAM 3.1 models, removing unwanted background pixels
+
+📥 Installation
+Go to the custom_nodes folder in your ComfyUI directory
+Run the command:git clone https://github.com/Warningning/ComfyUI-MaskToTransparent.git
